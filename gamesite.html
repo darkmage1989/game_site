@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header center">
+    <h1 class="header__title">Добро пожаловать <br> на мой сайт!</h1>
+    <p class="header__text">
+    Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <strong>поехали</strong> и <strong>приступай</strong>
+    </p>
+    <form action="#games">
+    <button class="button">Поехали!</button>
+    </form>
+</header>
+<nav id="games" class="games center">
+<a class="games__link games__link__1" href="#game">Игра 1</a>
+<a class="games__link games__link__2" href="#game_2">Игра 2</a>
+<a class="games__link games__link__3" href="#game_3">Игра 3</a>
+</nav>
+<section class="game center game__seasons" id="game">
+<div class="game__content">
+<h2 class="game__title">Времена года!</h2>
+<p class="game__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+<button onclick="seasons ()" class="button button_games">Играть!</button>
+</div>
+<img class="game__img_desktop" src="img/game_logo.svg" alt="game">
+<img class="game__img_mobile" src="img/game_logo_mobile.svg" alt="game">
+</section>
+<section class="game center game__revers" id="game_2">
+<div class="game__content">
+<h2 class="game__title">Запомни слова</h2>
+<p class="game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+<button onclick="Remember ()" class="button button_game">Играть!</button>
+</div>
+<img class="game__img_desktop" src="img/game_logo_2.svg" alt="game">
+<img class="game__img_mobile" src="img/game_logo_mobile_2.svg" alt="game">
+</section>
+<section class="game center game__riddles" id="game_3">
+    <div class="game__content">
+    <h2 class="game__title">Игра в загадки</h2>
+    <p class="game__text_riddles">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+    <button onclick="riddles()" class="button button_game">Играть!</button>
+    </section>
+    <div class="copyright center">
+<p class="copyright__text">Все права защищены</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
